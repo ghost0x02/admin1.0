@@ -45,7 +45,7 @@ def check_url(url):
 
 def find_admin_panel(base_url):
     """
-    Belirtilen site için admin panelini bulmaya çalışır.
+    Admin Panel.
     """
     if not base_url.startswith("http://") and not base_url.startswith("https://"):
         base_url = "http://" + base_url
@@ -58,7 +58,7 @@ def find_admin_panel(base_url):
             print(Fore.GREEN + Style.BRIGHT + f"【+】Admin paneli bulundu: {full_url}\n")
         else:
             print(Fore.RED + Style.BRIGHT + f"【-】Admin paneli bulunamadı: {full_url}\n")
-        time.sleep(1)
+        time.sleep(2.5)
 
 def main():
     time.sleep(1)
